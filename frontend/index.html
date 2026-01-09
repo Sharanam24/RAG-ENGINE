@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Automation - AI Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 RAG Automation Assistant</h1>
+            <p>Ask questions and get intelligent responses powered by RAG</p>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h2>Threads</h2>
+                    <button id="newThreadBtn" class="btn-primary">+ New Thread</button>
+                </div>
+                <div id="threadsList" class="threads-list">
+                    <!-- Threads will be loaded here -->
+                </div>
+            </aside>
+
+            <main class="chat-area">
+                <div id="chatMessages" class="messages">
+                    <div class="welcome-message">
+                        <h2>Welcome to RAG Automation</h2>
+                        <p>Start a new conversation or select an existing thread from the sidebar.</p>
+                    </div>
+                </div>
+                <div class="input-area">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Type your message here..." 
+                        rows="3"
+                    ></textarea>
+                    <button id="sendBtn" class="btn-send">Send</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
